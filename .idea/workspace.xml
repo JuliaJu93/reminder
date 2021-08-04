@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09f7a3e1-484b-48ff-bd33-59fe4ca49039" name="Default Changelist" comment="" />
+    <list default="true" id="09f7a3e1-484b-48ff-bd33-59fe4ca49039" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/AddEvents/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Container/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Event/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Event/styles.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Events/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,11 +31,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Event" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\Desktop\reminder\src\Components\Event" />
+      <recent name="C:\Users\julia\Desktop\reminder\src\Components\Events" />
+      <recent name="C:\Users\julia\Desktop\reminder\src\Components\AddEvents" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,11 +53,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627328375105</updated>
-      <workItem from="1627328376761" duration="2278000" />
+      <workItem from="1627328376761" duration="2553000" />
+      <workItem from="1627416449937" duration="440000" />
+      <workItem from="1628112461777" duration="2590000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
