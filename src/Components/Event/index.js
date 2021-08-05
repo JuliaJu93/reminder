@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.less';
+import './styles.scss';
 
 export const Event = () => {
     return <div className="containerEvent">
