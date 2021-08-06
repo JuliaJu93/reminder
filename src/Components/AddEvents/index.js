@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { addEvent } from './services/AddEventsServices';
 import './styles.scss';
 
 export const AddEvents = () => {
@@ -6,8 +7,8 @@ export const AddEvents = () => {
     const [eventData, setEventData] = useState('');
 
     const handleSubmit = e => {
-        console.log(eventData, eventValue);
         e.preventDefault();
+        addEvent(eventValue, eventData);
     }
 
     return <form className='addEventsContainer' onSubmit={e => handleSubmit(e)} >
