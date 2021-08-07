@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="09f7a3e1-484b-48ff-bd33-59fe4ca49039" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddEvents/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/services/AddEventsServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddEvents/services/AddEventsServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddEvents/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NewEventForm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/services/AddEventsServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ReminderServices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NewEventForm/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Event/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Event/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Events/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Events/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,8 @@
       <workItem from="1628161197349" duration="3749000" />
       <workItem from="1628188097169" duration="8087000" />
       <workItem from="1628245628817" duration="4194000" />
-      <workItem from="1628274074705" duration="5726000" />
+      <workItem from="1628274074705" duration="8274000" />
+      <workItem from="1628370677094" duration="1477000" />
     </task>
     <servers />
   </component>

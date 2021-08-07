@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles.scss';
 
-export const Event = () => {
+export const Event = ({ title, date }) => {
     return <div className="containerEvent">
-        <div> Дата </div>
-        <div> Событие </div>
+        <div> {date} </div>
+        <div> {title} </div>
         <button> Удалить </button>
     </div>
 };

@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
-import { addEvent } from './services/AddEventsServices';
+import { addEvent } from '../../services/ReminderServices';
 import './styles.scss';
 
-export const AddEvents = () => {
+export const NewEventForm = ({ setEventsData }) => {
     const [eventValue, setEventValue] = useState('');
     const [eventData, setEventData] = useState('');
 
+    const clearFields = () => {
+        setEventValue('');
+        setEventData('');
+    }
+
     const handleSubmit = e => {
         e.preventDefault();
-        addEvent(eventValue, eventData);
+        addEvent(eventValue, eventData, setEventsData);
+        clearFields();
     }
 
     return <form className='addEventsContainer' onSubmit={e => handleSubmit(e)} >
