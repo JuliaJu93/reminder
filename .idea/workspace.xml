@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09f7a3e1-484b-48ff-bd33-59fe4ca49039" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Events/helpers/datesFormatting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NewEventForm/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/services/AddEventsServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ReminderServices.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AddEvents/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NewEventForm/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Event/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Event/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Events/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Events/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NewEventForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NewEventForm/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,7 @@
       <recent name="C:\Users\julia\Desktop\reminder\src\Components\AddEvents" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\Desktop\reminder\src\Components\NewEventForm" />
       <recent name="C:\Users\julia\Desktop\reminder\src" />
     </key>
   </component>
@@ -62,7 +62,9 @@
       <workItem from="1628188097169" duration="8087000" />
       <workItem from="1628245628817" duration="4194000" />
       <workItem from="1628274074705" duration="8274000" />
-      <workItem from="1628370677094" duration="1477000" />
+      <workItem from="1628370677094" duration="3677000" />
+      <workItem from="1628458702786" duration="4864000" />
+      <workItem from="1628536806861" duration="8080000" />
     </task>
     <servers />
   </component>
