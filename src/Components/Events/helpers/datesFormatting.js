@@ -12,7 +12,7 @@ const calcResidual = (differenceBetweenDates, highestDate, result, dateFormatted
 
 const calcDateFormatting = (differenceBetweenDates, dateFormatted) => {
     if (differenceBetweenDates <= 0 || isNaN(differenceBetweenDates)) {
-        dateFormatted.push(0);
+        dateFormatted.push("Выполнено");
         return dateFormatted;
     } else if (differenceBetweenDates < 60) {
         dateFormatted.push(`${differenceBetweenDates}мин `);
@@ -30,7 +30,7 @@ const calcDateFormatting = (differenceBetweenDates, dateFormatted) => {
         calcResidual(differenceBetweenDates, 10080, weeks, dateFormatted);
     } else {
         const months = Math.trunc(calcHighestDateValue(differenceBetweenDates, 43800));
-        dateFormatted.push(`${months}м `);
+        dateFormatted.push(`Более ${months}м `);
         return dateFormatted;
     }
     return dateFormatted;
