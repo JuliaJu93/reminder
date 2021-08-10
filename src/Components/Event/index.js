@@ -1,10 +1,17 @@
 import React from 'react';
 import './styles.scss';
+import { deleteEvent } from '../../services/ReminderServices';
 
-export const Event = ({ title, date, styles }) => {
-    return <div className={styles}>
+export const Event = ({ id, title, date, styles, getEventWrapper }) => {
+    const onClickDelete = () => {
+        deleteEvent(id).then(res => {if (res.status === 204) {
+            getEventWrapper();
+        }});
+    }
+
+    return <li className={styles}>
         <div> {date} </div>
         <div> {title} </div>
-        <button> Удалить </button>
-    </div>
+        <button onClick={() => onClickDelete()}> Удалить </button>
+    </li>
 };

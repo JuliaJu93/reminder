@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { addEvent } from '../../services/ReminderServices';
+import { addEvent, getEvents } from '../../services/ReminderServices';
 import './styles.scss';
 
 export const NewEventForm = ({ setEventsData }) => {
@@ -13,7 +13,7 @@ export const NewEventForm = ({ setEventsData }) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        addEvent(eventValue, eventData, setEventsData);
+        addEvent(eventValue, eventData).then(() => getEvents(setEventsData));
         clearFields();
     }
 
