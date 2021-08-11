@@ -38,7 +38,7 @@ const calcDateFormatting = (differenceBetweenDates, dateFormatted) => {
 
 const dateFormatting = differenceBetweenDates => {
     const dateFormatted = [];
-    return calcDateFormatting(differenceBetweenDates, dateFormatted);
+    return calcDateFormatting(differenceBetweenDates, dateFormatted).toString();
 }
 
 export { dateFormatting };
