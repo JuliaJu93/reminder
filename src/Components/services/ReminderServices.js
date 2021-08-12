@@ -10,7 +10,7 @@ export const addEvent = (eventValue, eventData) => {
     })
 }
 
-export const getEvents = setEventsData => {
+export const getEvents = (setEventsData, setMessageErrorModal) => {
     fetch(url, {
         method: 'GET'
     })
@@ -18,6 +18,7 @@ export const getEvents = setEventsData => {
             return response.json()
         })
         .then(data => setEventsData(data))
+        .catch(response => setMessageErrorModal(response))
 }
 
 export const deleteEvent = id => {

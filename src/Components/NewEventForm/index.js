@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { addEvent, getEvents } from '../services/ReminderServices';
 import './styles.scss';
 
-export const NewEventForm = ({ setEventsData }) => {
+export const NewEventForm = ({ setEventsData, setMessageErrorModal }) => {
     const [eventValue, setEventValue] = useState('');
     const [eventData, setEventData] = useState('');
 
@@ -13,7 +13,9 @@ export const NewEventForm = ({ setEventsData }) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        addEvent(eventValue, eventData).then(() => getEvents(setEventsData));
+        addEvent(eventValue, eventData)
+            .then(() => getEvents(setEventsData, setMessageErrorModal))
+            .catch(response => setMessageErrorModal(response));
         clearFields();
     }
 

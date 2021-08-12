@@ -4,7 +4,7 @@ import { dateFormatting } from  './helpers/datesFormatting';
 import  { defineStyles } from './helpers/defineStyles';
 import  { sortingData } from './helpers/sortingData';
 
-export const Events = ({ eventsData, getEventWrapper }) => {
+export const Events = ({ eventsData, getEventWrapper, setMessageErrorModal }) => {
     const [currentDate, setCurrentDate] = useState(new Date());
 
     useEffect(() => {
@@ -25,6 +25,7 @@ export const Events = ({ eventsData, getEventWrapper }) => {
             date={dateFormatting(differenceBetweenDates)}
             styles={defineStyles(differenceBetweenDates)}
             getEventWrapper={getEventWrapper}
+            setMessageErrorModal={setMessageErrorModal}
         />
         })}
     </ul>

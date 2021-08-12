@@ -5,16 +5,17 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 40px 0;
+  margin: 2rem 0;
 
   label {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 2rem;
     font-weight: bold;
+    width: 33%;
 
     input {
-      width: 20rem;
+      width: 100%;
     }
   }
 
