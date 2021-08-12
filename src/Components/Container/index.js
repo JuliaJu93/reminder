@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NewEventForm } from '../NewEventForm';
 import { Events } from '../Events';
-import { getEvents } from '../../services/ReminderServices';
+import { getEvents } from '../services/ReminderServices';
 import './styles.scss';
 
 export const Container = () => {

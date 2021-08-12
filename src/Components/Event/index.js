@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import './styles.scss';
-import { deleteEvent } from '../../services/ReminderServices';
+import { deleteEvent } from '../services/ReminderServices';
 
 export const Event = memo(({ id, title, date, styles, getEventWrapper }) => {
     const onClickDelete = () => {

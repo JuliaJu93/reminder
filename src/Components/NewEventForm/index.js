@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { addEvent, getEvents } from '../../services/ReminderServices';
+import { addEvent, getEvents } from '../services/ReminderServices';
 import './styles.scss';
 
 export const NewEventForm = ({ setEventsData }) => {
