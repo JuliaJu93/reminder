@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { addEvent, getEvents } from '../../services/ReminderServices';
 import './styles.scss';
+import { IndicatorAddingEvent } from '../IndicatorAddingEvent';
 
 export const NewEventForm = ({ setEventsData, setMessageErrorModal }) => {
     const [eventValue, setEventValue] = useState('');
@@ -11,23 +12,30 @@ export const NewEventForm = ({ setEventsData, setMessageErrorModal }) => {
         setEventData('');
     }
 
+    const showIndicatorAddingEvent = response => {
+        console.log(response);
+    }
+
     const handleSubmit = e => {
         e.preventDefault();
         addEvent(eventValue, eventData)
-            .then(() => getEvents(setEventsData, setMessageErrorModal))
+            .then(response => { getEvents(setEventsData, setMessageErrorModal); showIndicatorAddingEvent(response)})
             .catch(response => setMessageErrorModal(response));
         clearFields();
     }
 
-    return <form className='eventsContainer' onSubmit={e => handleSubmit(e)} >
-        <label>
-            Событие:
-            <input required id="eventInput" value={eventValue} onChange={e => setEventValue(e.target.value)} />
-        </label>
-        <label>
-            Время:
-            <input required id="datetime" type="datetime-local" value={eventData} onChange={e => setEventData(e.target.value)} />
-        </label>
-        <input id="addButton" type="submit" value="Добавить" />
-    </form>
+    return <div>
+        <form className='eventsContainer' onSubmit={e => handleSubmit(e)} >
+            <label>
+                Событие:
+                <input required id="eventInput" value={eventValue} onChange={e => setEventValue(e.target.value)} />
+            </label>
+            <label>
+                Время:
+                <input required id="datetime" type="datetime-local" value={eventData} onChange={e => setEventData(e.target.value)} />
+            </label>
+            <input id="addButton" type="submit" value="Добавить" />
+        </form>
+        <IndicatorAddingEvent />
+    </div>
 };

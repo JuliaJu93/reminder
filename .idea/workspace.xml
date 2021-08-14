@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09f7a3e1-484b-48ff-bd33-59fe4ca49039" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/icons/Close.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/IndicatorAddingEvent/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/IndicatorAddingEvent/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ErrorModal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ErrorModal/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ErrorModal/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ErrorModal/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Event/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Event/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Events/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Events/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/NewEventForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NewEventForm/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/NewEventForm/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NewEventForm/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/services/ReminderServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ReminderServices.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/ErrorModal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Add" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -41,11 +38,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\julia\Desktop\reminder\src\Components\Add" />
       <recent name="C:\Users\julia\Desktop\reminder\src\Components\ErrorModal" />
       <recent name="C:\Users\julia\Desktop\reminder\src\Components\Modal" />
       <recent name="C:\Users\julia\Desktop\reminder\src\Components\Event" />
       <recent name="C:\Users\julia\Desktop\reminder\src\Components\Events" />
-      <recent name="C:\Users\julia\Desktop\reminder\src\Components\AddEvents" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\julia\Desktop\reminder\src" />
@@ -76,7 +73,7 @@
       <workItem from="1628707587984" duration="7065000" />
       <workItem from="1628804702723" duration="5432000" />
       <workItem from="1628893505812" duration="849000" />
-      <workItem from="1628954196291" duration="5029000" />
+      <workItem from="1628954196291" duration="9145000" />
     </task>
     <servers />
   </component>
