@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { addEvent, getEvents } from '../services/ReminderServices';
+import { addEvent, getEvents } from '../../services/ReminderServices';
 import './styles.scss';
 
 export const NewEventForm = ({ setEventsData, setMessageErrorModal }) => {
@@ -19,7 +19,7 @@ export const NewEventForm = ({ setEventsData, setMessageErrorModal }) => {
         clearFields();
     }
 
-    return <form className='addEventsContainer' onSubmit={e => handleSubmit(e)} >
+    return <form className='eventsContainer' onSubmit={e => handleSubmit(e)} >
         <label>
             Событие:
             <input required id="eventInput" value={eventValue} onChange={e => setEventValue(e.target.value)} />

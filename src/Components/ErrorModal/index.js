@@ -1,5 +1,6 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
+import { CloseIcon } from '../../icons/Close';
 import './styles.scss';
 
 export const ErrorModal = ({ messageErrorModal, setMessageErrorModal }) => {
@@ -12,11 +13,11 @@ export const ErrorModal = ({ messageErrorModal, setMessageErrorModal }) => {
             <div className="modal">
                 <div className="closeButton">
                     <button onClick={onCloseErrorModal}>
-                        <i className="fas fa-times"/>
+                        {CloseIcon}
                     </button>
                 </div>
                 <div className="message">{messageErrorModal}</div>
-                <button onClick={onCloseErrorModal}>Ok</button>
+                <button className="ok" onClick={onCloseErrorModal}>Ok</button>
             </div>
         </div>,
         document.getElementById('root'))

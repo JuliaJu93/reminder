@@ -1,11 +1,11 @@
 @import '../../variables';
 
-.addEventsContainer {
+.eventsContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 2rem 0;
+  padding: 2rem 0;
 
   label {
     display: flex;

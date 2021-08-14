@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NewEventForm } from '../NewEventForm';
 import { Events } from '../Events';
 import { ErrorModal } from '../ErrorModal';
-import { getEvents } from '../services/ReminderServices';
+import { getEvents } from '../../services/ReminderServices';
 import './styles.scss';
 
 export const Container = () => {
@@ -17,11 +17,11 @@ export const Container = () => {
     }, []);
 
     return <div className='container'>
-        <NewEventForm setEventsData={setEventsData} setMessageErrorModal={setMessageErrorModal} />
-        <Events eventsData={eventsData} getEventWrapper={getEventsWrapper} setMessageErrorModal={setMessageErrorModal} />
-        {!messageErrorModal && <ErrorModal
+        {messageErrorModal && <ErrorModal
             messageErrorModal={messageErrorModal}
             setMessageErrorModal={setMessageErrorModal}
         />}
+        <NewEventForm setEventsData={setEventsData} setMessageErrorModal={setMessageErrorModal} />
+        <Events eventsData={eventsData} getEventWrapper={getEventsWrapper} setMessageErrorModal={setMessageErrorModal} />
     </div>
 };
