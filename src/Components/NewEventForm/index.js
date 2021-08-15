@@ -6,22 +6,24 @@ import { IndicatorAddingEvent } from '../IndicatorAddingEvent';
 export const NewEventForm = ({ setEventsData, setMessageErrorModal }) => {
     const [eventValue, setEventValue] = useState('');
     const [eventData, setEventData] = useState('');
+    const [isIndicatorAddingEvent, setIsIndicatorAddingEvent] = useState(false);
 
-    const clearFields = () => {
+    const clearFieldsForm = () => {
         setEventValue('');
         setEventData('');
     }
 
-    const showIndicatorAddingEvent = response => {
-        console.log(response);
+    const showIndicatorAddingEvent = () => {
+        setIsIndicatorAddingEvent(true);
+        setTimeout(() => setIsIndicatorAddingEvent(false), 1500);
     }
 
     const handleSubmit = e => {
         e.preventDefault();
         addEvent(eventValue, eventData)
-            .then(response => { getEvents(setEventsData, setMessageErrorModal); showIndicatorAddingEvent(response)})
+            .then(() => { getEvents(setEventsData, setMessageErrorModal); showIndicatorAddingEvent()})
             .catch(response => setMessageErrorModal(response));
-        clearFields();
+        clearFieldsForm();
     }
 
     return <div>
@@ -36,6 +38,6 @@ export const NewEventForm = ({ setEventsData, setMessageErrorModal }) => {
             </label>
             <input id="addButton" type="submit" value="Добавить" />
         </form>
-        <IndicatorAddingEvent />
+        {isIndicatorAddingEvent && <IndicatorAddingEvent />}
     </div>
 };
