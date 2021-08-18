@@ -8,7 +8,7 @@ export const Event = memo(({ id, title, date, styles, getEventWrapper, setMessag
             .then(res => {if (res.status === 204) {
             getEventWrapper();
         }})
-            .catch(request => setMessageErrorModal(request));
+            .catch(() => setMessageErrorModal('Ошибка!'));
     }
 
     return <li className={styles}>

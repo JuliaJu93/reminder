@@ -22,7 +22,7 @@ export const NewEventForm = ({ setEventsData, setMessageErrorModal }) => {
         e.preventDefault();
         addEvent(eventValue, eventData)
             .then(() => { getEvents(setEventsData, setMessageErrorModal); showIndicatorAddingEvent()})
-            .catch(response => setMessageErrorModal(response));
+            .catch(() => setMessageErrorModal('Ошибка!'));
         clearFieldsForm();
     }
 

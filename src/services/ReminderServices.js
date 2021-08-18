@@ -18,7 +18,7 @@ export const getEvents = (setEventsData, setMessageErrorModal) => {
             return response.json()
         })
         .then(data => setEventsData(data))
-        .catch(response => setMessageErrorModal(response))
+        .catch(() => setMessageErrorModal('Ошибка!'))
 }
 
 export const deleteEvent = id => {
